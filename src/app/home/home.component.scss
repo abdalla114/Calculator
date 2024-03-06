@@ -1,0 +1,341 @@
+.division{
+    background-color: #4B5EFC;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 1.5rem;
+}
+.calc{
+    background-color: #D2D3DA;
+    color: black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+.body{
+    background-color: #F1F2F3;
+    width: 18%;
+}
+.numbers{
+    background-color:white;
+    color: black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+.zero{
+    background-color: white;
+    color: black;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zero-dark{
+    background-color: #2E2F38;
+    color: white;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-division{
+    background-color: #4B5EFC;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 1.5rem;
+}
+.dark-numbers{
+    background-color:#2E2F38;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+.body-dark{
+    
+        // background-color: #F1F2F3;
+        background-color: black;
+        width: 18%;
+    }
+
+
+/* styles.css */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .dark-area{
+    background-color: #2E2F38;
+    color: white;
+  }
+  .form-select{
+    width: 50%;
+    text-align: center;
+  }
+  .position-fixed{
+    z-index: -1;
+    background-color: #24252c;
+  }
+//   --------------------------------------
+@media screen and (max-width : 1330.5px) {
+.body{
+    width: 20%;
+}
+.body-dark{
+    width: 20%;
+}
+
+}
+@media screen and (max-width : 1205.5px) {
+.body{
+    width: 21%;
+}
+.body-dark{
+    width: 21%;
+}
+}
+@media screen and (max-width : 1105.5px) {
+.body{
+    width: 22%;
+}
+.body-dark{
+    width: 22%;
+}
+}
+@media screen and (max-width : 1051px) {
+.body{
+    width: 23%;
+}
+.body-dark{
+    width: 23%;
+}
+}
+@media screen and (max-width : 1023px) {
+.body{
+    width: 24%;
+}
+.body-dark{
+    width: 24%;
+}
+}
+@media screen and (max-width : 992px) {
+.body{
+    width: 25%;
+}
+.body-dark{
+    width: 25%;
+}
+}
+@media screen and (max-width : 960px) {
+.body{
+    width: 26%;
+}
+.body-dark{
+    width: 26%;
+}
+}
+@media screen and (max-width : 933px) {
+.body{
+    width: 28%;
+}
+.body-dark{
+    width: 28%;
+}
+}
+@media screen and (max-width : 891px) {
+.body{
+    width: 30%;
+}
+.body-dark{
+    width: 30%;
+}
+}
+@media screen and (max-width : 871px) {
+.body{
+    width: 32%;
+}
+.body-dark{
+    width: 32%;
+}
+}
+@media screen and (max-width : 790px) {
+.body{
+    width: 34%;
+}
+.body-dark{
+    width: 34%;
+}
+}
+@media screen and (max-width : 766px) {
+.body{
+    width: 36%;
+}
+.body-dark{
+    width: 36%;
+}
+}
+@media screen and (max-width : 720px) {
+.body{
+    width: 38%;
+}
+.body-dark{
+    width: 38%;
+}
+}
+@media screen and (max-width : 652px) {
+.body{
+    width: 40%;
+}
+.body-dark{
+    width: 40%;
+}
+}
+@media screen and (max-width : 630px) {
+.body{
+    width: 42%;
+}
+.body-dark{
+    width: 42%;
+}
+}
+@media screen and (max-width : 588px) {
+.body{
+    width: 44%;
+}
+.body-dark{
+    width: 44%;
+}
+}
+@media screen and (max-width : 566px) {
+.body{
+    width: 46%;
+}
+.body-dark{
+    width: 46%;
+}
+}
+@media screen and (max-width : 516px) {
+.body{
+    width: 48%;
+}
+.body-dark{
+    width: 48%;
+}
+}
+@media screen and (max-width : 490px) {
+.body{
+    width: 50%;
+}
+.body-dark{
+    width: 50%;
+}
+}
+@media screen and (max-width : 460px) {
+.body{
+    width: 52%;
+}
+.body-dark{
+    width: 52%;
+}
+}
+@media screen and (max-width : 433px) {
+.body{
+    width: 54%;
+}
+.body-dark{
+    width: 54%;
+}
+}
+@media screen and (max-width : 401px) {
+.body{
+    width: 54%;
+}
+.body-dark{
+    width: 54%;
+}
+}
+@media screen and (max-width : 391px) {
+.body{
+    width: 58%;
+}
+.body-dark{
+    width: 58%;
+}
+}

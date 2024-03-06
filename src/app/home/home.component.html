@@ -1,0 +1,62 @@
+<section class=" vh-100 d-flex align-items-center justify-content-center flex-column">
+    <!-- index.html -->
+ 
+    <!-- <label class="switch" (click)="Darktoggle()">
+        <input type="checkbox" id="toggle" />
+        <span class="slider round"></span>
+      </label> -->
+ <button (click)="Darktoggle()" class="btn btn-dark" *ngIf="isDark"><span>Dark</span></button>
+ <button (click)="Darktoggle()" class="btn btn-light" *ngIf="isDark == false"><span>Light</span></button>
+      
+    <div class="row justify-content-center mx-auto g-2 p-3 rounded-5 mt-2 shadow" [ngClass]="[isDark?'body':'body-dark']">
+    <p class=" py-4 rounded-3 d-flex justify-content-end" [ngClass]="[isDark?'bg-white':'dark-area']"><span>{{result}}</span></p>
+    <div class="col-md-12 d-flex justify-content-center">    
+        <div class="col-md-3 text-center  calc me-2 " (click)="getitem(item)" style="cursor: pointer;" *ngFor="let item of ['AC','+/-','%']">
+        <div class="">
+         <span>{{item}}</span>
+        </div>
+     </div>
+     <div class="col-md-3 text-center division" (click)="getitem('/')" style="cursor: pointer;">
+         <span>/</span>
+     </div>
+    </div>
+     <div class="col-md-12 d-flex justify-content-center">
+        <div class="col-md-3 text-center me-2" [ngClass]="[isDark?'numbers':'dark-numbers']" (click)="getitem(item)" *ngFor="let item of ['1','2','3']" style="cursor: pointer;">
+            <span>{{item}}</span>
+        </div>
+        <div class="col-md-3 text-center division pt-1" (click)="getitem('*')" style="cursor: pointer;">
+            <span>*</span>
+        </div>
+     </div>
+      <div class="col-md-12 d-flex justify-content-center">
+        <div class="col-md-3 text-center numbers me-2" [ngClass]="[isDark?'numbers':'dark-numbers']" (click)="getitem(item)" *ngFor="let item of ['4','5','6']" style="cursor: pointer;">
+            <span>{{item}}</span>
+        </div>
+        <div class="col-md-3 text-center division " (click)="getitem('-')" style="cursor: pointer;">
+            <span>-</span>
+        </div>
+      </div>
+     <div class="col-md-12 d-flex justify-content-center">
+        <div class="col-md-3 text-center numbers me-2" [ngClass]="[isDark?'numbers':'dark-numbers']" (click)="getitem(item)" *ngFor="let item of ['7','8','9']" style="cursor: pointer;">
+            <span>{{item}}</span>
+        </div>
+        <div class="col-md-3 text-center division " (click)="getitem('+')" style="cursor: pointer;">
+            <span>+</span>
+        </div>
+     </div>
+      <div class="col-md-12 d-flex justify-content-center">
+        <div class="col-md-6 text-center zero rounded-pill me-3" [ngClass]="[isDark?'zero':'zero-dark']" (click)="getitem('0')" style="cursor: pointer;">
+            <span>0</span>
+        </div>
+        <div class="col-md-3 text-center numbers me-2" [ngClass]="[isDark?'numbers':'dark-numbers']"  (click)="getitem('.')" style="cursor: pointer;">
+            <span>.</span>
+        </div>
+        <div class="col-md-3 text-center division " (click)="equal()" style="cursor: pointer;">
+            <span>=</span>
+        </div>
+      </div>
+    </div>
+</section>
+<div class="position-fixed start-0 end-0 top-0 bottom-0" *ngIf="isDark == false">
+
+</div>
